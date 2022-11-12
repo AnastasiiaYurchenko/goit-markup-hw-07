@@ -19,25 +19,25 @@
 .address-item.link {
     line-height: 1.71;
     color: var(--white-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address-list .link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-item.link:hover,
-.address-item.link:focus {
-    color: var(--accent-color);
-}
-
 .footer-contacts-item.link {
     line-height: 1.71;
     color: var(--footer-contacts-text-color);
-}
 
-.footer-contacts-item.link:hover,
-.footer-contacts-item.link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer-social-text {
@@ -70,15 +70,15 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .footer-social-icon {
     fill: currentColor;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: var(--accent-color);
 }
 
 .footer-logo-address-wrap {
@@ -114,16 +114,17 @@
     margin-right: 15px;
     outline: transparent;
     color: var(--white-text-color);
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.input-sign-mail::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.6);
-}
 
 .btn-sign {
     background: var(--accent-color);
@@ -139,12 +140,13 @@
     letter-spacing: 0.06em;
     color: var(--white-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--active-button-color);
+    }
 }
 
-.btn-sign:hover,
-.btn-sign:focus {
-    background-color: var(--active-button-color);
-}
 
 .sign-icon {
     margin-left: 10px;
