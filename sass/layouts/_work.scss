@@ -2,23 +2,23 @@
     padding-top: 0;
 }
 
-.work-item {
-    width: calc((100% - 60px) / 3);
-}
-
-.work-list {
+.pictures-list {
     display: flex;
 }
 
-.work-item:not(:last-child) {
-    margin-right: 30px;
+.pictures-list__item {
+    width: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.work-img-thumb {
+.pictures-list__bottom {
     position: relative;
 }
 
-.work-overlay {
+.pictures-list__text {
     position: absolute;
     width: 100%;
     height: 70px;
